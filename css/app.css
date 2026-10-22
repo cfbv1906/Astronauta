@@ -100,3 +100,17 @@ canvas {
     font-size: 13px;
     color: #ccc;
 }
+#overlay .titulo {
+    margin: 0 0 8px;
+    font-size: 26px;
+    letter-spacing: 0.04em;
+}
+
+#overlay .ayuda {
+    margin: 0 24px 26px;
+    max-width: 320px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    color: #c9cdd6;
+}

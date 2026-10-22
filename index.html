@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title></title>
+	<title>Parallax AR</title>
 	<meta charset="utf-8">
 	<meta name="generator" content="Three.js Editor">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
@@ -28,9 +28,11 @@
 
 	<div id="ar-container"></div>
 
-	<div class="log" id="log">asdasdsa</div>
+	<div class="log" id="log"></div>
 
 	<div id="overlay">
+		<h1 class="titulo">Parallax AR</h1>
+		<p class="ayuda">Apunta la cámara a la tarjeta y toca los 3 botones para escuchar sus sonidos.</p>
 		<button id="start-button">Iniciar</button>
 		<div id="progress-container">
 			<div id="progress-bar-track">
@@ -57,6 +59,7 @@
 		const progressLabel = document.getElementById('progress-label');
 
 		const debugMode = new URLSearchParams(location.search).get('debug') === '1';
+		log.style.display = debugMode ? 'block' : 'none';
 
 		let player = null;
 		let mindarController = null;
